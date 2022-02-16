@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+# Pokemon App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React app which uses PokemonAPI to show list of cards that contain details of all Pokemon. 
 
-## Available Scripts
+### Prerequisites
 
-In the project directory, you can run:
+Following should be installed before running the project
 
-### `npm start`
+```
+Node 
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Installing
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Install necessary dependencies
 
-### `npm test`
+```
+npx create-react-app checklist
+npm install react-router-dom
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
 
-### `npm run build`
+2. To run the project locally using npm
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+npm start
+```
+3. Navigate to the following URL to launch app
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+http://localhost:3000
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Pokemon App Features
+* The "Home" page shows a paginated list of Pokemon in card format.
+* The "Prev" and "Next" buttons can be used to navigate through the list.
+* Each card contains the Pokemon's image, name, weight, height and abilities.
+* Clicking on the Pokemon name in the card will take you to a "Details" page showing a bigger picture that Pokemon, its name and its type. To go back to the "Home" page, click on the "Home"link in the Navbar.
+* The number of cards shown on each page can be set using the "Display Pokemon" dropdown.
+* The Pokemon can be sorted in Ascending or Descending order using the "Sort" dropdown. To go back to original view, select "None" in the dropdown.
+* The "Search" box will search Pokemon based on the name or ability. Note that the Pokemon name or ability has to be an exact match for the search to work. If a Pokemon or a list of Pokemon having same ability is found, you can go back to original view using "Back to Results" button. If input is an invalid value or the Pokemon or ability is not found, then no action will take place.
+* The UI uses CSS Grid which makes it responsive on all resolutions.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Limitations due to time constraints
+* No unit tests
+* No incremental commits. Commited entire code once after the application was developed.
+* Page refresh does not maintain sorting and search related data.
