@@ -1,0 +1,10 @@
+.Navbar {
+    padding: 20px;
+    background: #4267B2;
+    color: white;
+}
+
+.Navbar a, .Navbar a:visited{
+    font-weight: 700;
+    color: white;
+}
